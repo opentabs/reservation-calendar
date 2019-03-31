@@ -12,3 +12,4 @@ CREATE TABLE availability (
   times TIME NOT NULL,
   restaurant_id INTEGER NOT NULL
 );
+
