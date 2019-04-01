@@ -10,7 +10,7 @@
     "start": "nodemon server/server.js",
     "react-dev": "webpack -d --watch",
     "test": "jest",
-    "db:setup": "node database-mysql/seed.js",
+    "seed": "node server/seed.js",
     "precommit": "NODE_ENV=production lint-staged"
   },
   "dependencies": {
