@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "nodemon server/server.js",
-    "react-dev": "webpack -d --watch",
+    "react-dev": "webpack --config webpack.config.js --watch",
     "test": "jest",
     "seed": "node server/seed.js",
     "precommit": "NODE_ENV=production lint-staged"
@@ -16,12 +16,9 @@
   "dependencies": {
     "axios": "^0.17.1",
     "body-parser": "^1.18.3",
-    "bootstrap": "^3.3.7",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
     "express": "^4.16.4",
-    "faker": "^4.1.0",
-    "jquery": "^3.2.1",
     "moment": "^2.24.0",
     "mysql": "^2.16.0",
     "react": "^16.8.6",
@@ -35,31 +32,24 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.5.0",
     "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
     "eslint": "^5.15.3",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
-    "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
+    "faker": "^4.1.0",
     "jest": "^24.5.0",
     "lint-staged": "^8.1.5",
     "morgan": "^1.9.1",
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0"
+    "webpack-cli": "^3.3.0",
+    "style-loader": "^0.23.1",
+    "jquery": "^3.3.1"
   },
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/opentabs/reservation-calendar.git"
-  },
-  "keywords": [],
-  "bugs": {
-    "url": "https://github.com/opentabs/reservation-calendar/issues"
-  },
-  "homepage": "https://github.com/opentabs/reservation-calendar#readme"
+  "mode": "development"
 }

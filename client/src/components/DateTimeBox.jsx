@@ -1,9 +1,11 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable class-methods-use-this */
 import React from 'react';
-import '../styling/reservationtitle.css';
+import Date from './Date.jsx';
+import Time from './Time.jsx';
+import '../styling/datetimebox.css';
 
-class ReservationTitle extends React.Component {
+class DateTimeBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,11 +18,12 @@ class ReservationTitle extends React.Component {
 
   render() {
     return (
-      <div className="reservation-title">
-        <h1>Make a reservation</h1>
+      <div className="datetime-container">
+        <Date />
+        <Time />
       </div>
     );
   }
 }
 
-export default ReservationTitle;
+export default DateTimeBox;
