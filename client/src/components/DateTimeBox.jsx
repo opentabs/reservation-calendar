@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable class-methods-use-this */
 import React from 'react';
+import ReactDOM from "react-dom";
 import Date from './Date.jsx';
 import Time from './Time.jsx';
 import '../styling/datetimebox.css';

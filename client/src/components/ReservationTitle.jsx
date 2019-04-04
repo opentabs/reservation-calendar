@@ -1,17 +1,12 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable class-methods-use-this */
 import React from 'react';
+import ReactDOM from "react-dom";
 import '../styling/reservationtitle.css';
 
 class ReservationTitle extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
     };
-  }
-
-  componentDidMount() {
   }
 
   render() {

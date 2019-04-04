@@ -1,7 +1,5 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable class-methods-use-this */
 import React from 'react';
-// import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
 import ReservationTitle from './ReservationTitle.jsx';
 import PartySize from './PartySize.jsx';
 import FindTable from './FindTable.jsx';

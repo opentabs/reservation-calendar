@@ -1,5 +1,3 @@
-/* eslint-disable class-methods-use-this */
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import Reservation from './Reservation.jsx';
 import '../styling/app.css';
@@ -9,9 +7,6 @@ class App extends React.Component {
     super(props);
     this.state = {
     };
-  }
-
-  componentDidMount() {
   }
 
   render() {

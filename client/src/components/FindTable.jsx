@@ -1,7 +1,6 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable class-methods-use-this */
 import React from 'react';
 import '../styling/findtable.css';
+import BookAmount from './BookAmount.jsx'
 
 class FindTable extends React.Component {
   constructor(props) {
@@ -11,14 +10,14 @@ class FindTable extends React.Component {
     };
   }
 
-  componentDidMount() {
-  }
-
   render() {
     return (
+      <div>
       <button className="button-container">
-        Find a Table
+        <h1 className="find-title">Find a Table</h1>
       </button>
+      <BookAmount />
+      </div>
     );
   }
 }

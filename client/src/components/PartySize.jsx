@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable class-methods-use-this */
 import React from 'react';
+import ReactDOM from "react-dom";
 import '../styling/partysize.css';
 
 class PartySize extends React.Component {
@@ -18,13 +17,11 @@ class PartySize extends React.Component {
     }
     return (
       <div>
-        <h1 className="party-size">
-        Party Size
-        </h1>
+        <h1 className="party-size">Party Size</h1>
         <select className="drop-down">
-            {selection.map((option, i) => (
-              <option key={i}>{option}</option>
-            ))}
+          {selection.map((option, i) => (
+            <option key={i}>{option}</option>
+          ))}
         </select>
       </div>
     );
